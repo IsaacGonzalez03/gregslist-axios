@@ -5,9 +5,7 @@ import { isValidProp } from "./Utils/isValidProp.js"
 class AppState extends EventEmitter {
 
   /** @type {Car[]} */
-  cars = [
-    new Car("Honda", "Accord", 10000, "rusty", 500, "//placehold.it/500x500")
-  ]
+  cars = []
 }
 
 export const ProxyState = new Proxy(new AppState(), {
