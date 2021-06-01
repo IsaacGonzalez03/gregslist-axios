@@ -1,5 +1,5 @@
 export class Car {
-    constructor({id, make, model, year, price, imgUrl}){
+    constructor({ id, make, model, year, price, imgUrl }) {
         this.id = id
         this.year = year
         this.make = make
@@ -8,7 +8,7 @@ export class Car {
         this.imgUrl = imgUrl
     }
 
-    get cardTemplate(){
+    get cardTemplate() {
         return /*html */`
         <div class="col-lg-4 listing my-3">
         <div class="card">  

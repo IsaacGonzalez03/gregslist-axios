@@ -6,6 +6,9 @@ class AppState extends EventEmitter {
 
   /** @type {Car[]} */
   cars = []
+
+  /**@type {House} */
+  houses = []
 }
 
 export const ProxyState = new Proxy(new AppState(), {
